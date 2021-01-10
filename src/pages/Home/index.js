@@ -99,9 +99,9 @@ const Home = (props) => {
         <View style={{ height: 'auto', backgroundColor: '#FFF', borderLeftColor: item.status === "SUCCESS" ? '#58B483' : '#E9663F', borderLeftWidth: 7, marginHorizontal: 10, padding: 15, borderRadius: 6, flexDirection: 'row', justifyContent: 'space-between', marginVertical: 5 }}>
             <View>
                 <View style={{ flexDirection: 'row' }}>
-                    <Text style={{ fontSize: 15 }}>{String(item.beneficiary_bank).toUpperCase()}</Text>
+                    <Text style={{ fontSize: 15, fontWeight: '700' }}>{String(item.beneficiary_bank).toUpperCase()}</Text>
                     <Icon1 name="arrow-right" style={{ fontSize: 15, top: 2, left: 5 }} />
-                    <Text style={{ fontSize: 15, left: 10 }}>{String(item.sender_bank).toUpperCase()}</Text>
+                    <Text style={{ fontSize: 15, left: 10, fontWeight: '700' }}>{String(item.sender_bank).toUpperCase()}</Text>
                 </View>
                 <View style={{ flexDirection: 'row' }}>
                     <Text style={{ fontSize: 15 }}>{String(item.beneficiary_name).toUpperCase()}</Text>
@@ -147,6 +147,7 @@ const Home = (props) => {
                         loadingGet ? (
                             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                                 <Text>Loading...</Text>
+                                <Text>Data Sedang Di Proses</Text>
                             </View>
                         ) : (
                                 <FlatList

@@ -1,12 +1,8 @@
 export const money = (e) => {
-    var rupiah = '';
-    var angkarev = e
-        .toString()
-        .split('')
-        .reverse()
-        .join('');
-    for (var i = 0; i < angkarev.length; i++)
-        if (i % 3 == 0) rupiah += angkarev.substr(i, 3) + '.';
+    let rupiah = '';
+    let angkaChange = String(e).split('').reverse().join('');
+    for (let i = 0; i < angkaChange.length; i++)
+        if (i % 3 == 0) rupiah += angkaChange.substr(i, 3) + '.';
     return (
         'Rp' +
         rupiah
@@ -17,7 +13,6 @@ export const money = (e) => {
 }
 
 export const formatDate = (date) => {
-    console.log(date, 'inidate')
     const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni",
         "Juli", "Agustus", "September", "Oktober", "November", "Desember"
     ];

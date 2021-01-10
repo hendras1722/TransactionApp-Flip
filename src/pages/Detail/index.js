@@ -22,7 +22,7 @@ const Detail = (props) => {
                     </View>
                     <TouchableOpacity onPress={() => copyText()}>
                         <View style={{ left: 5 }}>
-                            <Icon name="content-copy" style={{ fontSize: 20 }} />
+                            <Icon name="content-copy" style={{ fontSize: 20, color: '#E9663F' }} />
                         </View>
                     </TouchableOpacity>
                 </View>
