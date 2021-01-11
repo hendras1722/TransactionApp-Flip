@@ -2,6 +2,11 @@
 
 Technical Test Flip
 
+## Download App
+
+[![Google Drive](https://img.shields.io/badge/Download%20via%20Google%20Drive-Download%20App-red)](https://drive.google.com/file/d/14SVa98lxzVcjtVpMsbmNlMqqsa3hN0Xt/view?usp=sharing)
+
+
 ## Development
 [![React Native](https://img.shields.io/badge/react%20native-v0.63.4-blue)](https://facebook.github.io/react-native/)
 
